@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أبو بسام للسباكة | كشف تسريب المياه في عمان</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #003f88;
+            --light-blue: #0d6efd;
+            --accent-orange: #f47a20;
+            --bg-gray: #f5f7fa;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+        body { background: var(--bg-gray); color: #333; }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(rgba(0, 63, 136, 0.9), rgba(0, 63, 136, 0.9)), 
+                        url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        nav { background: var(--primary-blue); text-align: center; padding: 15px; sticky; top: 0; z-index: 1000; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--accent-orange);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        .btn:hover { transform: scale(1.05); background: #d36618; }
+
+        /* Services Section */
+        section { padding: 60px 20px; max-width: 1200px; margin: auto; text-align: center; }
+        h2 { margin-bottom: 40px; color: var(--primary-blue); font-size: 2rem; border-bottom: 3px solid var(--accent-orange); display: inline-block; padding-bottom: 5px; }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            position: relative;
+        }
+        .card:hover { transform: translateY(-10px); }
+
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        
+        /* العلامة المائية "أبو بسام" على الصور */
+        .watermark {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(244, 122, 32, 0.8);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .card-content { padding: 20px; }
+        .card h3 { color: var(--primary-blue); margin-bottom: 10px; }
+
+        /* Form */
+        form { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
+        
+        /* Contact Buttons */
+        .floating-btns { position: fixed; bottom: 20px; left: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 1000; }
+        .float-btn { padding: 15px 25px; border-radius: 50px; text-decoration: none; color: white; font-weight: bold; display: flex; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .whatsapp { background: #25D366; }
+        .call { background: var(--light-blue); }
+
+        footer { background: var(--primary-blue); color: white; padding: 30px; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#">الرئيسية</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#contact">اتصل بنا</a>
+</nav>
+
+<header>
+    <h1>أبو بسام للسباكة والمقاولات</h1>
+    <p>خبرة 15 عاماً في كشف التسريبات وصيانة الشبكات في عمان</p>
+    <a href="#contact" class="btn">اطلب فني الآن</a>
+</header>
+
+<section id="services">
+    <h2>خدماتنا المتخصصة</h2>
+    <div class="grid-container">
+        <div class="card">
+            <span class="watermark">أبو بسام</span>
+            <img src="https://images.unsplash.com/photo-1581091870627-3c1d6f4fbe9f" alt="جهاز كشف تسريب مياه">
+            <div class="card-content">
+                <h3>كشف تسريب المياه</h3>
+                <p>استخدام أحدث الأجهزة الإلكترونية لتحديد مكان الخلل بدقة وبدون تكسير الجدران.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="watermark">أبو بسام</span>
+            <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=600&q=80" alt="تركيب مواسير">
+            <div class="card-content">
+                <h3>تأسيس وتركيب المواسير</h3>
+                <p>تنفيذ شبكات المياه والصرف الصحي للمباني الجديدة قيد الإنشاء بأعلى المعايير.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="watermark">أبو بسام</span>
+            <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=600&q=80" alt="عامل مواسير">
+            <div class="card-content">
+                <h3>صيانة وإصلاح فوري</h3>
+                <p>فريق محترف جاهز للتعامل مع كافة مشاكل السباكة المنزلية والصناعية على مدار الساعة.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>اطلب خدمة الآن</h2>
+    <form>
+        <input type="text" placeholder="الاسم الكريم" required>
+        <input type="tel" placeholder="رقم الهاتف" required>
+        <textarea rows="4" placeholder="اشرح لنا المشكلة (مثلاً: تهريب في الحمام)"></textarea>
+        <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">إرسال الطلب</button>
+    </form>
+    <div style="margin-top: 30px;">
+        <p>📍 الموقع: عمان - كافة المناطق</p>
+        <p>📞 الهاتف: 0799181610</p>
+    </div>
+</section>
+
+<footer>
+    <p>جميع الحقوق محفوظة © 2026 - مكتب أبو بسام للسباكة</p>
+</footer>
+
+<div class="floating-btns">
+    <a href="tel:0799181610" class="float-btn call">📞 إتصال هاتفي</a>
+    <a href="https://wa.me/962799181610" class="float-btn whatsapp">💬 واتساب</a>
+</div>
+
+</body>
+</html>
